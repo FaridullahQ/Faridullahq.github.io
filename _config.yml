@@ -1,6 +1,38 @@
 title: Faridullah Cybersecurity Journey
-description: From Software Engineering to Cybersecurity | SOC Analyst Path
+description: Professional cybersecurity learning journal focused on SOC analyst growth, hands-on labs, and security engineering insights.
+url: "https://faridullahq.github.io"
+baseurl: ""
 theme: minima
+lang: en
+
+author:
+  name: Faridullah Qaderi
+
+minima:
+  skin: dark
+  social_links: []
 
 header_pages:
-  - about.md
+  - _pages/about.md
+  - _pages/labs.md
+  - _pages/archive.md
+
+show_excerpts: true
+permalink: /:categories/:year/:month/:day/:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections_dir: .
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Faridullah Qaderi
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/banner.png

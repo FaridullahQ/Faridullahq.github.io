@@ -1,132 +1,77 @@
 ---
-title: "Our Cybersecurity Journey Starts Here"
+title: "My Cybersecurity Journey Starts Here"
 date: 2026-04-06
+excerpt: "This blog begins a structured journey from software engineering into cybersecurity, with a practical focus on SOC analyst growth and public portfolio building."
 ---
 
-Welcome to our blog.
+Welcome to the start of this cybersecurity journey.
 
-We are **Software Engineers** with a strong interest in technology, systems, and continuous learning. Now, we are starting a new journey into the world of **Cybersecurity**, and this blog will document that journey step by step.
+I come from a software engineering background, and this blog marks a deliberate move into cybersecurity through a structured, practical, and professional path. The goal is not just to study security, but to build a public record of learning that grows into a real portfolio.
 
-This is not just a blog for sharing information. It is also a place for learning, growing, and moving forward together.
+## Why this blog exists
 
-We will be learning cybersecurity from the **fundamentals to advanced practical work**, and we invite you to stay connected with us throughout this journey. If you are also interested in cybersecurity, whether you are a beginner or already experienced, keep in touch so we can learn, improve, and complete this journey together.
+This site is being used for four purposes at the same time:
 
-## What this blog will cover
+- to document learning clearly
+- to stay disciplined and consistent
+- to build practical understanding through labs
+- to present progress in a professional way
 
-This blog will include structured learning and practical experience in cybersecurity, including topics such as:
+Cybersecurity is a broad field, so structure matters. Instead of jumping randomly between topics, this journey is broken into stages.
 
-- Introduction to Cybersecurity
-- Networking Fundamentals
-- Linux Basics
-- Windows Security Basics
-- Cybersecurity Concepts and Terminology
-- Threats, Attacks, and Vulnerabilities
-- Security Operations Center (SOC) Fundamentals
-- Log Analysis
-- Incident Detection and Response
-- SIEM Tools
-- Wireshark and Packet Analysis
-- Endpoint Security
-- Web Security Basics
-- Identity and Access Management
-- Risk Management
-- Security Best Practices
-- Hands-on Labs and Real Practice
-- Advanced Security Monitoring and Investigation
+## Planned learning stages
 
-## Our step-by-step learning path
+### 1. Foundation stage
+This stage covers the essential starting point:
 
-We plan to follow a clear path from beginner level to advanced practice. The journey will move through stages like these:
+- cybersecurity concepts and terminology
+- the CIA triad
+- basic threat types
+- risk and defensive mindset
 
-### 1. Foundation Stage
-In this stage, we will focus on the essential building blocks:
+### 2. Networking stage
+Security work depends heavily on understanding traffic and communication:
 
-- What cybersecurity is  
-- Why cybersecurity matters  
-- Types of cyber threats  
-- Networking basics  
-- IP, DNS, HTTP, HTTPS, ports, and protocols  
-- Linux and Windows basic usage  
-- Security principles such as Confidentiality, Integrity, and Availability  
+- IP and DNS
+- HTTP and HTTPS
+- ports and protocols
+- packet flow and visibility
 
-### 2. Core Technical Stage
-Here, we will build deeper technical understanding:
+### 3. Systems stage
+Analysts need confidence with the operating systems they investigate:
 
-- System administration basics  
-- Network traffic understanding  
-- Firewalls and antivirus concepts  
-- Authentication and authorization  
-- Common attack methods  
-- Malware basics  
-- Vulnerability concepts  
+- Linux basics
+- Windows basics
+- permissions and services
+- system and security logs
 
-### 3. Security Analyst Stage
-This stage is more focused on practical cybersecurity work:
+### 4. SOC analyst stage
+This is the target path for professional growth:
 
-- SOC Analyst role  
-- Monitoring alerts  
-- Understanding logs  
-- Event correlation  
-- Investigating suspicious activity  
-- Using SIEM platforms  
-- Identifying incidents and escalation paths  
+- monitoring
+- alert triage
+- event review
+- escalation and documentation
 
-### 4. Practical Tools Stage
-In this stage, we will work with real tools and lab practice:
+### 5. Practical tools stage
+This stage turns theory into practice:
 
-- Wireshark  
-- Splunk or ELK  
-- Nmap  
-- Linux command line tools  
-- Windows Event Viewer  
-- Basic threat hunting practice  
-- Detection and analysis exercises  
+- Wireshark
+- Nmap
+- SIEM platforms
+- Event Viewer
+- Linux log analysis
 
-### 5. Advanced Practice Stage
-After the fundamentals and tools, we will move into more advanced areas:
+### 6. Advanced practice stage
+Over time, the focus will expand into:
 
-- Incident response processes  
-- Threat detection strategies  
-- MITRE ATT&CK basics  
-- Endpoint investigation  
-- Alert triage  
-- Security reporting  
-- Real-world case studies  
-- Building practical projects and portfolio work  
+- incident response
+- threat detection logic
+- threat hunting basics
+- case write-ups and portfolio projects
 
-## Courses and learning direction
+## What readers can expect here
 
-Our learning journey will move from **fundamental courses** to **advanced practical study**. We will focus on learning in a structured way, such as:
+Future posts will include notes, labs, walkthroughs, tool practice, learning summaries, and structured reflections. The aim is to make this blog useful both for personal growth and for others following a similar path.
 
-- Cybersecurity Fundamentals  
-- Networking for Security  
-- Linux for Security Professionals  
-- SOC Analyst Fundamentals  
-- SIEM Fundamentals  
-- Log Analysis and Investigation  
-- Incident Response Basics  
-- Practical Detection and Monitoring  
-- Threat Hunting Introduction  
-- Advanced Security Operations Practice  
-
-## Why we are doing this
-
-As Software Engineers, we already work with systems, logic, and problem-solving. Cybersecurity is a natural next step because it combines technical depth, analysis, defense, and real-world impact.
-
-Through this blog, we aim to:
-
-- document our learning journey  
-- share useful notes and practical experience  
-- build a professional cybersecurity portfolio  
-- stay consistent and disciplined  
-- connect with others on the same path  
-
-## Let’s move together
-
-This journey is just beginning.
-
-If you are also learning cybersecurity, stay in touch and follow along. We will move from the basics to advanced practice, one step at a time. With consistency, patience, and practical work, we can complete this journey successfully.
-
-Thank you for visiting our blog.
-
-More posts, notes, tools, labs, and practical lessons are coming soon.
+This is the first post in that process, and many more practical entries will follow.

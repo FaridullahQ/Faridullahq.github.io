@@ -4,33 +4,48 @@ title: About
 permalink: /about/
 ---
 
-## About us
+<section class="page-section">
+  <h1>About This Journey</h1>
+  <p class="section-lead">
+    This blog is a structured cybersecurity portfolio that documents a transition from software engineering into cybersecurity, with a strong focus on practical learning and the SOC analyst path.
+  </p>
 
-We are Software Engineers with a passion for building systems, solving problems, and continuously learning new technologies.
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>Mission</h3>
+      <p>Build strong cybersecurity capability through consistent study, practical labs, technical writing, and public portfolio development.</p>
+    </div>
+    <div class="info-card">
+      <h3>Audience</h3>
+      <p>Beginners, aspiring SOC analysts, and technical readers who value hands-on learning over theory alone.</p>
+    </div>
+    <div class="info-card">
+      <h3>Approach</h3>
+      <p>Move step by step: concept first, tool second, lab third, reflection fourth.</p>
+    </div>
+  </div>
+</section>
 
-Now, we are transitioning into the field of **Cybersecurity**, focusing on becoming professional **SOC Analysts and Security Engineers**.
+<section class="page-section">
+  <h2>What this blog focuses on</h2>
+  <ul>
+    <li>Cybersecurity fundamentals and defensive mindset</li>
+    <li>Networking, protocols, and packet visibility</li>
+    <li>Linux and Windows system understanding</li>
+    <li>SOC analyst skills and monitoring workflows</li>
+    <li>Logs, SIEM thinking, and incident investigation</li>
+    <li>Hands-on labs and tool-based practice</li>
+    <li>Professional portfolio building through technical writing</li>
+  </ul>
+</section>
 
-This blog represents our full journey — from beginner to advanced — with real learning, real tools, and real practice.
+<section class="page-section">
+  <h2>Long-term vision</h2>
+  <p>
+    The goal is not only to learn cybersecurity, but to present that learning in a professional and credible way. Over time, this site will grow into a polished record of progress, labs, notes, and case-based analysis.
+  </p>
 
-## Our Mission
-
-- Build strong cybersecurity knowledge from fundamentals to advanced
-- Practice real-world scenarios and tools
-- Share knowledge in a structured and practical way
-- Help others who are starting the same journey
-- Create a strong professional portfolio
-
-## What We Focus On
-
-- Cybersecurity Fundamentals  
-- Networking & System Security  
-- SOC Analyst Skills  
-- SIEM & Log Analysis  
-- Threat Detection & Incident Response  
-- Practical Labs and Real Scenarios  
-
-## Stay Connected
-
-We believe learning is better together.
-
-Follow this journey, stay consistent, and let’s grow step by step into cybersecurity professionals.
+  <div class="callout">
+    This journey is designed to be practical, public, disciplined, and portfolio-ready.
+  </div>
+</section>
