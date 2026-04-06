@@ -1,3 +1,6 @@
-title: Faridullah Blog
-description: Cybersecurity | Software Engineering | Technology
+title: Faridullah Cybersecurity Journey
+description: From Software Engineering to Cybersecurity | SOC Analyst Path
 theme: minima
+
+header_pages:
+  - about.md
