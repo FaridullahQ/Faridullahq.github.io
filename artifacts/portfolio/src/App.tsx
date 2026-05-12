@@ -12,7 +12,6 @@ import Footer from "@/components/layout/Footer";
 import Home from "@/pages/home";
 import About from "@/pages/about";
 import Cv from "@/pages/cv";
-import CoverLetter from "@/pages/cover-letter";
 import Projects from "@/pages/projects";
 import Contact from "@/pages/contact";
 
@@ -28,7 +27,6 @@ function Router() {
             <Route path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/cv" component={Cv} />
-            <Route path="/cover-letter" component={CoverLetter} />
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
             <Route component={NotFound} />
