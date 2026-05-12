@@ -28,7 +28,7 @@ export default function CoverLetter() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-3">
             <div>
               <h1 className="text-3xl font-bold">Senior Software Engineer Officer</h1>
-              <p className="text-muted-foreground font-mono text-sm mt-1">Grade 7 · Job ID 3160 · Da Afghanistan Bank</p>
+              <p className="text-muted-foreground font-mono text-sm mt-1">Grade 7 · Application for a Senior Engineering Role</p>
             </div>
             <Button
               variant="outline"
@@ -61,19 +61,18 @@ export default function CoverLetter() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground font-mono">
                   <Calendar className="h-4 w-4 text-primary" />
-                  28 April 2026 &nbsp;/&nbsp; 1405-02-08
+                  28 April 2026
                 </div>
               </div>
             </div>
 
             {/* Recipient */}
-            <div className="px-8 pt-6 pb-2 border-b bg-muted/20">
+            <div className="px-8 pt-6 pb-4 border-b bg-muted/20">
               <div className="flex items-start gap-3">
                 <Building2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                 <div className="text-sm text-muted-foreground">
                   <p className="font-medium text-foreground">The Hiring Committee</p>
                   <p>General Directorate of Information Technology</p>
-                  <p>Da Afghanistan Bank (DAB)</p>
                   <p>Kabul, Afghanistan</p>
                 </div>
               </div>
@@ -83,7 +82,7 @@ export default function CoverLetter() {
             <div className="px-8 py-4 border-b bg-primary/5">
               <p className="text-sm">
                 <span className="font-semibold">Subject:</span>{" "}
-                Application for the Position of Senior Software Engineer Officer (Grade 7) — Job ID 3160
+                Application for the Position of Senior Software Engineer Officer (Grade 7)
               </p>
             </div>
 
@@ -93,17 +92,17 @@ export default function CoverLetter() {
 
               <p>
                 I am writing to express my interest in the position of Senior Software Engineer Officer (Grade 7)
-                at the General Directorate of Information Technology, Da Afghanistan Bank. With over five years
-                of experience in enterprise software engineering, system architecture, and national-scale systems,
-                I am confident in my ability to contribute to DAB's digital transformation initiatives.
+                at the General Directorate of Information Technology. With over five years of experience in
+                enterprise software engineering, system architecture, and national-scale systems, I am confident
+                in my ability to contribute meaningfully to the organization's digital transformation initiatives.
               </p>
 
               <p>
                 Currently, I serve as a System Design & Analysis Specialist and Team Lead at the Ministry of
                 Communications and Information Technology (MCIT). In this role, I lead the architecture and
                 development of national ERP systems, including Revenue, Sales, Accounting, Payroll, and Afghan
-                Post platforms. I manage the full Software Development Life Cycle—from requirements analysis to
-                deployment—while producing technical documentation (SRS, UML, BPMN, APIs) and leading
+                Post platforms. I manage the full Software Development Life Cycle — from requirements analysis
+                to deployment — while producing technical documentation (SRS, UML, BPMN, APIs) and leading
                 cross-functional teams.
               </p>
 
@@ -117,14 +116,14 @@ export default function CoverLetter() {
               <p>
                 In addition, I am the founder of the open-source Harm Programming Language and have published
                 modules on the Odoo App Store, including localization and AI-based tools. I am also the author
-                of a Pashto book on cybersecurity awareness and am currently pursuing an MSc in Information
-                Technology at Kabul University.
+                of a Pashto-language book on cybersecurity awareness and am currently pursuing an MSc in
+                Information Technology at Kabul University.
               </p>
 
               <p>
-                I am highly motivated to contribute to Da Afghanistan Bank's mission by supporting the
-                development of secure, reliable, and modern financial systems. I believe my combination of
-                technical expertise and leadership experience makes me a strong fit for this role.
+                I am highly motivated to contribute to the organization's mission by supporting the development
+                of secure, reliable, and modern information systems. I believe my combination of technical
+                expertise and leadership experience makes me a strong fit for this role.
               </p>
 
               <p>

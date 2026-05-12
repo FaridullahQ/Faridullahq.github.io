@@ -1,0 +1,34 @@
+You are a senior portfolio developer and expert UI/UX designer.  
+Generate a **complete, professional portfolio website** that integrates my CV and cover letter (attached).  
+
+🔹 Requirements:
+- **Structure:** Multi-page portfolio (Home, About Me, CV, Cover Letter, Projects, Contact).  
+- **Design:** Clean, modern, responsive layout with both **Dark Mode and Light Mode toggle** for user preference.  
+- **UI/UX:** Intuitive navigation bar, smooth scrolling, consistent spacing, mobile-first design, accessible color contrast.  
+- **Content Integration:**  
+  - Display my CV in a structured, easy-to-read format (sections: Education, Experience, Skills).  
+  - Include my Cover Letter as a dedicated page with styled formatting.  
+  - **Do not mention specific company names (e.g., DAB).**  
+  - **Do not include references; instead add a line “References available upon request.”**  
+- **Projects Section:** Placeholder cards with images, titles, and descriptions (ready for me to replace).  
+- **Contact Section:** Simple form (Name, Email, Message) with validation.  
+- **Footer:** Professional footer with social media icons and copyright.  
+
+🔹 Technical:
+- Use **HTML5, CSS3, and JavaScript** (no frameworks unless necessary).  
+- Ensure **SEO-friendly structure** (meta tags, alt attributes).  
+- Include **download buttons** for CV and Cover Letter (PDF format).  
+- Add smooth animations/transitions for hover effects and page loads.  
+- Implement **Dark/Light mode toggle** with persistent user preference (localStorage).  
+- Prepare the project for **deployment via GitHub Pages at https://faridullahq.github.io/**:  
+  - Include a `README.md` with setup and deployment instructions.  
+  - Ensure all assets (CSS, JS, images, PDFs) use relative paths so they work on GitHub Pages.  
+  - Provide a ready-to-push folder structure compatible with GitHub repositories.  
+  - Add a `.github/workflows/deploy.yml` GitHub Actions workflow for CI/CD auto-deployment to GitHub Pages whenever I push changes.  
+
+🔹 Deliverables:
+- Full folder structure (`index.html`, `about.html`, `cv.html`, `cover-letter.html`, `projects.html`, `contact.html`, `style.css`, `script.js`, `README.md`, `.github/workflows/deploy.yml`).  
+- All code must be **complete, professional, and ready to deploy**.  
+- Provide reusable components (cards, buttons, forms, dark/light toggle) for easy customization.  
+
+Act as a portfolio expert: make this site visually appealing, recruiter-friendly, optimized for showcasing my professional profile, and **ready to publish live at https://faridullahq.github.io/**.  

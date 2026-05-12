@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, Award, Globe, Users, Download, ExternalLink } from "lucide-react";
+import { Briefcase, GraduationCap, Award, Globe, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -83,19 +83,10 @@ const certifications = [
   { name: "Diploma in English Language (DEL)", issuer: "Azrakash Computer & English Academic Center", year: "2011" },
 ];
 
-const references = [
-  {
-    name: "Eng. Mahdi Dahmardah",
-    org: "Ministry of Communications and Information Technology (MCIT)",
-    email: "mahdidahmardah@gmail.com",
-    phone: "+93 74 426 6486",
-  },
-  {
-    name: "Eng. Zakirullah Zahid",
-    org: "Ministry of Communications and Information Technology (MCIT)",
-    email: "zakirullahzd@gmail.com",
-    phone: "+93 766 245 618",
-  },
+const languages = [
+  { lang: "Pashto", level: "Fluent" },
+  { lang: "Dari", level: "Fluent" },
+  { lang: "English", level: "Fluent" },
 ];
 
 function SectionHeader({ icon: Icon, title, index }: { icon: React.ElementType; title: string; index: number }) {
@@ -136,7 +127,9 @@ export default function Cv() {
               <p className="text-lg text-muted-foreground font-mono">
                 Senior Software Engineer · System Architect · Technical Team Lead
               </p>
-              <p className="text-sm text-muted-foreground mt-1">Kabul, Afghanistan · +93 788 707 479 · faridullah.qaderi@mcit.gov.af</p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Kabul, Afghanistan · +93 788 707 479 · faridullah.qaderi@mcit.gov.af
+              </p>
             </div>
             <Button
               variant="outline"
@@ -266,33 +259,42 @@ export default function Cv() {
           </div>
         </div>
 
-        {/* References */}
-        <div className="mb-8">
-          <SectionHeader icon={Users} title="References" index={5} />
-          <div className="grid sm:grid-cols-2 gap-4">
-            {references.map((ref, i) => (
+        {/* Languages */}
+        <div className="mb-14">
+          <SectionHeader icon={Globe} title="Languages" index={5} />
+          <div className="flex flex-wrap gap-4">
+            {languages.map((l, i) => (
               <motion.div
-                key={ref.name}
+                key={l.lang}
                 custom={i}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeUp}
-                className="border rounded p-5 bg-card"
-                data-testid={`reference-${i}`}
+                className="border rounded p-4 bg-card flex items-center gap-3 min-w-[140px]"
+                data-testid={`language-cv-${l.lang.toLowerCase()}`}
               >
-                <p className="font-semibold">{ref.name}</p>
-                <p className="text-sm text-primary font-mono mt-0.5">{ref.org}</p>
-                <div className="mt-3 space-y-1 text-xs text-muted-foreground">
-                  <a href={`mailto:${ref.email}`} className="flex items-center gap-1.5 hover:text-primary transition-colors">
-                    {ref.email}
-                  </a>
-                  <p>{ref.phone}</p>
+                <div className="h-2 w-2 rounded-full bg-primary" />
+                <div>
+                  <p className="font-medium text-sm">{l.lang}</p>
+                  <p className="text-xs text-muted-foreground">{l.level}</p>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
+
+        {/* References note */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="border rounded p-5 bg-muted/30 text-center"
+          data-testid="references-note"
+        >
+          <p className="text-sm text-muted-foreground italic">References available upon request.</p>
+        </motion.div>
       </div>
     </div>
   );

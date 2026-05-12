@@ -1,7 +1,8 @@
 import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useTheme } from "@/components/theme-provider";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -15,6 +16,7 @@ const navLinks = [
 export default function Navbar() {
   const [location] = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
@@ -22,7 +24,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded bg-primary text-primary-foreground font-mono font-bold">
+              <div className="flex h-8 w-8 items-center justify-center rounded bg-primary text-primary-foreground font-mono font-bold text-sm">
                 FQ
               </div>
               <span className="font-mono font-semibold tracking-tight">FARIDULLAH.DEV</span>
@@ -43,21 +45,49 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild variant="outline" size="sm" className="ml-2 font-mono">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+              data-testid="button-toggle-theme"
+              className="ml-1"
+            >
+              {theme === "dark" ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
+            </Button>
+            <Button asChild variant="outline" size="sm" className="font-mono">
               <Link href="/cv" data-testid="nav-download-cv">Download CV</Link>
             </Button>
           </nav>
 
-          {/* Mobile Nav Toggle */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-            data-testid="mobile-menu-toggle"
-          >
-            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </Button>
+          {/* Mobile right controls */}
+          <div className="flex items-center gap-1 md:hidden">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+              data-testid="mobile-button-toggle-theme"
+            >
+              {theme === "dark" ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(!isOpen)}
+              data-testid="mobile-menu-toggle"
+            >
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -78,7 +108,12 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild variant="outline" className="w-full justify-start font-mono mt-2" onClick={() => setIsOpen(false)}>
+            <Button
+              asChild
+              variant="outline"
+              className="w-full justify-start font-mono mt-2"
+              onClick={() => setIsOpen(false)}
+            >
               <Link href="/cv" data-testid="mobile-nav-download-cv">Download CV</Link>
             </Button>
           </div>
