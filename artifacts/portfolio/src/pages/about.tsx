@@ -73,7 +73,7 @@ export default function About() {
         >
           <span className="text-xs font-mono text-primary tracking-widest uppercase">About Me</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6">
-            Building systems at national scale
+            Building Systems at National Scale
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Senior Software Engineer and System Architect with over five years of experience
